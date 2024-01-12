@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: my-component
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/ralphjbean-tenant/hacbs-probe-payload/my-component@sha256:1141b93fb6c64f6056012de7d3238bcf5d89974bc3ac56ebde6de2ace3df01b6
+        name: container-image
+        resources: {}
+status: {}
