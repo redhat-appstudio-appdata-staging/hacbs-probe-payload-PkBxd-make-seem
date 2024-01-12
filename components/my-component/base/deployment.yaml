@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: my-component
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads-stage/ralphjbean-tenant/hacbs-probe-payload/my-component@sha256:1141b93fb6c64f6056012de7d3238bcf5d89974bc3ac56ebde6de2ace3df01b6
         imagePullPolicy: Always
         name: container-image
         ports:
